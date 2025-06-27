@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ans of 10</title>
+</head>
+
+<body>
+    <label>Comment</label> <br>
+    <input type="text" id="comment">
+
+    <button onclick="
+    const commentValue = document.getElementById('comment').value;
+    document.getElementById('output').innerText = commentValue;
+    ">Post</button>
+
+    <p>Your comment: <span id="output"></span></p>
+</body>
+
+</html>
