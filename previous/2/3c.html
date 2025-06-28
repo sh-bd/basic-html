@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>The datalist element</h1>
+    <select id="selectedVal">
+        <option value="Dhaka">Dhaka</option>
+        <option value="Jhenaidah">Jhenaidah</option>
+        <option value="Natore">Natore</option>
+    </select>
+
+    <button type="button" onclick="funcA()">Submit</button>
+
+    <p id="output"></p>
+    <script>
+        function funcA() {
+            const v = document.getElementById('selectedVal').value;
+            document.getElementById('output').innerText = v
+        }
+    </script>
+</body>
+
+</html>

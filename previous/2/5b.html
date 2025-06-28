@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Javascript Validation</h1>
+    <label for="">Name: </label>
+    <input type="text" name="" id="nameVal">
+    <button type="button" onclick="funcX()">Submit</button>
+
+    <p id="output"></p>
+
+    <script>
+        function funcX() {
+            name = document.getElementById('nameVal').value
+            if (!name) {
+                alert('Name must be filled')
+            }
+            else {
+                document.getElementById('output').innerText = name
+            }
+        }
+    </script>
+</body>
+
+</html>
